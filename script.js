@@ -9,40 +9,80 @@ var  multipleUl= document.querySelector("#MultipleChoice");
 // variable to keep initials with highscore
 var intials = document.querySelector("#initials");
 // defines variable for questions
-var questions = [
-    {
+var qBox = document.querySelector("#questions-box");
+
+var questions1 = [{
     ask:"How many eyelids do dogs have?",
     mulitple:["3", "5","2", "1",],
-    answer:"3"
-    },
-    {
+    answer:"3" }]
+
+var question2 = [{
     ask:"What sense are puppies born without?",
     multiple:["eyesight", "taste", "hearing", "smell"],
-    answer:"hearing"},
-    {
+    answer:"hearing"}]
+
+var question3 = [{
     ask:"What is the most popular breed of dog in the USA?",
     multiple:["Poodle", "German Shepard", "Labrador", "Golden Retriever"],
-    answer:"Labrador"
-    },
-    {
+    answer:"Labrador"}]
+
+var question4 = [{
     ask:"How many teeth do adult dogs have?",
     multiple:["36", "42", "54", "28"],
-    answer:"42"
-    },
-];
-var randomQuestion = questions[Math.floor(Math.random()*questions.length)];
-console.log(randomQuestion);
+    answer:"42"}];
+
+var quizQ = ["questions1", "question2", "question3", "question4"];
+var randomQ = getRandomItems(quizQ);
+
+function getRandomItems(quizQ) {
+    let usedIndexes = []; //keeps track of used index
+    let randomIitems = [];
+
+    for (let i = 0; i < quizQ.length; i++) {
+        let randomIndex;
+
+        do {
+            randomIndex = Math.floor(Math.random() * quizQ.length); //generates a random index
+        } while (usedIndexes.includes(randomIndex)); // makes sure the index has not been used yet
+        usedIndexes.push(randomIndex); //add index to the usedIndexes
+        randomIitems.push(quizQ[randomIndex]);
+    }
+    return randomIitems;
+}
+console.log(randomQ);
+//  random questions function
+// var questionIndex = 0;
+
+//     function quiz() {
+//         for (var i = 0; userChoice > userQuestion; i++) {
+//                 var userQuestion = questions[questionIndex].ask;
+//                 var userChoice = questions[questionIndex].multiple;
+//         }   
+//             console.log(userQuestion);
+//         }
+// quiz()
+// hids the container
+qBox.style.display = "none";
+
 var secondsLeft = 60;
-// this variable holds the timmer
+// this function sets the  the time viarable
+function startTime() {
+    var timeStarter = setInterval(function(){    secondsLeft--;
+        timeH2.textContent = secondsLeft;
+        if(secondsLeft === 0) {
+          clearInterval(timeStarter);  
+        }},1000)
+}
+startTime();
+
+
 var holdInterval = 0;
 // this variable stores the penalty time for wrong answer
 var penalty = 10;
 // define all questions and answers asked BCS can have mutiple things here
 
 // function that starts the game/timer?
-function startGame(){
 
-}
 //      start quiz
 //          hide start button
 //          show the quiz container
@@ -51,15 +91,16 @@ function startGame(){
 //          display countdown on screen
 // I'll need to append the child or element in html
 // function not sure if this will work that will start the questions
-    function questions(){
-        for (var i = 0; i < questions.length; i++) {
-            var userQuestion = questions[questionIndex].ask;
-            var userChoice = questions[questionsIndex].multiple;
-            questionsDiv.textContent = userQuestion;
-            console.log(questions);
-        }
-    }
-//      rendering a question
+// var questionIndex = 0;
+//     function questionNum() {
+//         for (var i = 0; userChoice > userQuestion; i++) {
+//                 var userQuestion = questions[questionIndex].ask;
+//                 var userChoice = questions[questionIndex].multiple;
+//         }   
+//             console.log(userQuestion);
+//         }
+// questionNum()
+//    rendering a question
 //          clear/remove previous question
 //          getting first question
 //          add question to the question container

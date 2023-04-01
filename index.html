@@ -12,25 +12,25 @@
 <body>
     <!-- container for high scores and timer--> 
      <header>
-        <h2>timer:<span id="timer">0</span></h2>
+        <h2>timer:<span id="timer">60</span></h2>
         <h2>Highscore:<span id="highscore"></span></h2>
      </header>
     <div id="container"> 
     <main>
         <h1>Trivia about Dogs</h1>
         <p>To answer the following questions within the time limit. 
-            Keep in mind that wrong answers will penalize your scoretime by ten seconds.</p>
-                    
+            Keep in mind that wrong answers will penalize your scoretime by ten seconds.</p>               
     </main> 
         <!--    container for the questions --> 
-    <aside>
-         <section id="questions-box"> 
+        <aside id="Qbox">
+            <button id="start-time">Start the Quiz</button> 
+            <section id="questions-box"> 
             <!-- start button -->  
-        <button id="start-time">Start the Quiz</button>       
-            <ul id="multiplChoice">0</ul>
-            <ul id="initials">0</ul>
-        </section> 
-    </aside>
+                   
+                <ul id="multiplChoice">0</ul>
+                <ul id="initials">0</ul>
+            </section> 
+        </aside>
     </div>
     <script src="./script.js"></script>
 </body>
