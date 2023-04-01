@@ -1,32 +1,33 @@
 
 *{
-  
-  box-sizing:border-box
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+    background-color: beige;
+    height: 20vh;
+    padding: 15px;
+}
+#start-time {
+    font-size: 150%;
+    background-color: blue;
+    color: antiquewhite;
+}
+#container {
+    display: flex;
+    height: 80vh;
+    background-color: aquamarine; 
 }
 
-body {
- 
-    font-family: sans-serif;
-    background-color: aqua;
-
-}
-#wrapper {
-    height: 100%;
-    flex-direction: column;
-    grid-column:auto;
-    text-align: center;
-
+main {
+    
+    width: 30%;
+    justify-content: center;
+    align-items: center;
 }
 
-button {
-    border: 1px solid black;
-    background-color: lightgray;
-    font-size: 20px;
-}
-#questions {
-    flex-direction: column;
-    margin: 50px;
-    height: 75%;
-
-
+aside {
+    width: 70%;
+    background-color: bisque;
 }

@@ -1,4 +1,14 @@
-// define all questions and answers asked BCS can have mutiple things here
+// define variable for tracking tim
+var timeH2 = document.querySelector("#timer");
+// variable for keeping highscore
+var highScoreH2 = document.querySelector("#highscore");
+// variable to start the game
+var startBtn = document.querySelector("#start-time");
+// variable for questions multiple choice
+var  multipleUl= document.querySelector("#MultipleChoice");
+// variable to keep initials with highscore
+var intials = document.querySelector("#initials");
+// defines variable for questions
 var questions = [
     {
     ask:"How many eyelids do dogs have?",
@@ -20,44 +30,18 @@ var questions = [
     answer:"42"
     },
 ];
-
-// define variable for tracking
-var timer = [];
-// defines variable for questions
-var questionsDiv = [];
-// defines variable for the ul tag for the multiple choice
-var miltipleChoiceUl = [];
-// variable for how much time is left
+var randomQuestion = questions[Math.floor(Math.random()*questions.length)];
+console.log(randomQuestion);
 var secondsLeft = 60;
 // this variable holds the timmer
 var holdInterval = 0;
 // this variable stores the penalty time for wrong answer
 var penalty = 10;
+// define all questions and answers asked BCS can have mutiple things here
 
-// create variables to reference DOM elements links to HTML
-//     variable that links the answers
-var answersUl = document.querySelector("#multipleChoiceUl");
-//     variable that links the timer
-var timer = document.querySelector("#currentTime");
-//     variable that links the questions
-var questionsDiv = document.querySelector("#questionsDiv");
-//      variable that links the start button
-var button = document.querySelector("#startTime");
-//      name/initials
-//      save button
-//      high scores container
+// function that starts the game/timer?
+function startGame(){
 
-// function that starts the timer?
-function starTimmer("click", function(event)) {
-    var timerInterval = setInterval(function(){
-        secondsLeft--;
-        currentTime.textContent = secondsLeft = "Timmer countdown:";
-
-        if(secondsLeft === 0) {
-            clearInterval(timerInterval);
-            
-        }
-    }, 1000);
 }
 //      start quiz
 //          hide start button
