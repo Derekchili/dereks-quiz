@@ -21,8 +21,11 @@ header {
 }
 
 .ans1,.ans2,.ans3,.ans4 {
-    Background-color: salmon;
+    Background-color: darkblue;
+    color: antiquewhite;
+    padding: 20px; 
     }
+
 main {
     
     width: 70%;
