@@ -14,14 +14,15 @@
      <header>
         <h2>timer:<span id="timer">60</span></h2>
         <h2>Highscore:<span id="highscore">0</span></h2>
+        <h2>Initials:<span id="initials-input"></span></h2>
      </header>
     <div id="container"> 
     <main>
         <h1></h1>
-        <h3 class="ans1"></h3>
-        <h3 class="ans2"></h3>
-        <h3 class="ans3"></h3>
-        <h3 class="ans4"></h3>
+        <h3 class="ans1" onclick="checkAnswer(event)"></h3>
+        <h3 class="ans2" onclick="checkAnswer(event)"></h3>
+        <h3 class="ans3" onclick="checkAnswer(event)"></h3>
+        <h3 class="ans4" onclick="checkAnswer(event)"></h3>
 
     </main> 
         <!--    container for the questions --> 
@@ -29,9 +30,9 @@
             <button id="start-time">Start the Quiz</button> 
             <section id="questions-box"> 
             <!-- start button -->  
-                   
-                <p id="multipleChoice">0</p>
-                <ul id="initials">0</ul>
+
+               <!-- <p id="multipleChoice">0</p> -->
+               
             </section> 
         </aside>
     </div>

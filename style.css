@@ -9,6 +9,10 @@ header {
     height: 20vh;
     padding: 15px;
 }
+#initials {
+    background-color: beige;
+    
+}
 #start-time {
     font-size: 150%;
     background-color: blue;
