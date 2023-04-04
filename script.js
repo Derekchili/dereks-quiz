@@ -155,6 +155,7 @@ function checkAnswer(event) {
     }
 };
 
+// variable for timer countdown is secondsLeft, and highscoreH2 is the html link
 function remainingTime() {
     // Hides the container wit hquestions in it
     container.style.display = "none";
