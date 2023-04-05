@@ -1,66 +1,28 @@
 # dereks-quiz
-## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Started this project not knowing JavaScript very well at all, finished knowing it about 20% more lol. I am going to add a screen shot which I will remove later that shows all the things I tried in greyed out section just so you can see how much I tried to get this to work! This project has been very frustrating but rewarding seeing it work in the end.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+I originally was going to do like 3 html screens one for the start page, one for the questions and one for input. But after a while I thought to just do one and use javascript hide and display features would be easier, not sure if that is the case. I was motivated to do this because I really need this to click and make more sense to me. It is starting to make more sense but the more I do it will get a little easier. Only thing I have not got done is setting up the local storage, and at this point I'm worried I'll mess up something, I will add it later.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Using github pages I am able to get the webpage going and deployed, doing this now a few times it has got easier for me to figure out.
 
-## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Screenshots
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![alt text](/screenshot1.png)
+![alt text](/screenshot2.png)
+![alt text](/screenshot5.png)
+![alt text](/screenshot4.png)
+![alt text](/screenshot3.png)
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I had help from two of the TA Matt, and Henry who helped get me in the right direction. Had a tutor Andres help me also to get some bugs worked out and explained how some of the things were working. Also Joel from class we did a few zoom calls talking through a lot of stuff together. I used W3Schools, mnd, and google to get some ideas of what I needed or how to structure a function.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Project by: Derek Chilson

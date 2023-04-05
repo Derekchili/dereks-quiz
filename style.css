@@ -4,15 +4,13 @@
   margin: 0;
   padding: 0;
 }
+/* gives header some color and styling */
 header {
     background-color: beige;
     height: 20vh;
     padding: 15px;
 }
-#initials {
-    background-color: beige;
-    
-}
+/* give start button some colors */
 #start-time {
     font-size: 150%;
     background-color: blue;

@@ -2,51 +2,45 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>QUIZ</title>
-</head>
-<body>
-    <!-- container for high scores and timer--> 
-     <header>
-        <h2>timer:<span id="timer">60</span></h2>
-        <h2>Highscore:<span id="highscore"></span></h2>
-        <h2>Initials:<span id="initials-input"></span></h2>
-     </header>
-    <div id="container"> 
-    <main>
+  </head>
+  <body>
+    <!-- this area for high scores and timer-->
+    <header>
+      <h2>timer:<span id="timer">60</span></h2>
+      <h2>Highscore:<span id="highscore"></span></h2>
+      <h2>Initials:<span id="initials-input"></span></h2>
+    </header>
+    <!-- This container holds the Questions and answers -->
+    <div id="container">
+      <main>
         <h1></h1>
         <h3 class="ans1" onclick="checkAnswer(event)"></h3>
         <h3 class="ans2" onclick="checkAnswer(event)"></h3>
         <h3 class="ans3" onclick="checkAnswer(event)"></h3>
         <h3 class="ans4" onclick="checkAnswer(event)"></h3>
-
-    </main> 
-        <!--    container for the questions --> 
-        <aside id="Qbox">
-            <button id="start-time">Start the Quiz</button> 
-            <section id="questions-box"> 
-            <!-- start button -->  
-
-               <!-- <p id="multipleChoice">0</p> -->
-               
-            </section> 
-        </aside>
+      </main>
+      <!--    container for the questions once You click start quiz-->
+      <aside id="Qbox">
+        <button id="start-time">Start the Quiz</button>
+        <section id="questions-box"></section>
+      </aside>
     </div>
     <div>
-        <!-- input field to capture initials -->
-        <input type="text" id="inputDiv" placeholder="Enter your initials here.">
-        <button id="inputBtn">Click here</button>
+      <!-- input field to capture initials -->
+      <input
+        type="text"
+        id="inputDiv"
+        placeholder="Enter your initials here."
+      />
+      <button id="inputBtn">Click here</button>
     </div>
-    <div id="highscoreDiv" style="display: none;">
-
-            <!-- leaderboard -->
-
-
-    </div>
+    <div id="highscoreDiv" style="display: none"></div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
